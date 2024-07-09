@@ -1,0 +1,39 @@
+.BackgroundImageOverlay img{
+    width: 100%;
+}
+.BackgroundImageOverlay{
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.BlackOverlay{
+    position: absolute;
+    top: 0;
+    opacity: 0.2;
+    width: 100%;
+    height: 200vh;
+    background-color: black;
+}
+.WriteUpContent{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.WriteUpContent h1{
+    text-transform: uppercase;
+    font-size: 90px;
+    color: white;
+
+}
+.WriteUpContent p{
+    font-size: 30px;
+    color: white;
+}
+.WriteUpContent p span{
+    color:#ffed00;
+}
