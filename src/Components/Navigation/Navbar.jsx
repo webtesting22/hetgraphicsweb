@@ -7,7 +7,7 @@ const Navbar = () => {
             path: ""
         },
         {
-            link: "Gallery",
+            link: "fasfs",
             path: ""
         }
     ]
