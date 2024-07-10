@@ -14,7 +14,7 @@ const CompanyQuate = () => {
                     </div>
                     <div className="col-lg-3" style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
                         <div style={{ position: "relative" }}>
-                            <button className="AnimatedBtn">YellowSpot <i class='bx bx-right-arrow-alt'></i></button>
+                            <a href="https://yellow-spot.vercel.app/" target="_blank"><button className="AnimatedBtn">YellowSpot <i class='bx bx-right-arrow-alt'></i></button></a>
                             <div className="btnBackside">
 
                             </div>

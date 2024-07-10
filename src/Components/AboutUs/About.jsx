@@ -13,7 +13,7 @@ const About = () => {
         <div class="AboutusContainer container">
 
           <div className="row">
-            <div className="col-lg-3" style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <div className="col-lg-3" style={{ display: "flex", alignItems: "center", justifyContent: "start" }}>
               <div className="headingContainer">
                 <h1 className="sectionheading">About us</h1>
                 <hr />

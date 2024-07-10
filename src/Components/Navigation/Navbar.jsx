@@ -30,9 +30,8 @@ const Navbar = () => {
                         </>
                     ))}
                     <div style={{position:"relative"}}>
-                        <button className="AnimatedBtn">YellowSpot</button>
+                        <a href="https://yellow-spot.vercel.app/" target="_blank"><button className="AnimatedBtn">YellowSpot</button></a>
                         <div className="btnBackside">
-
                         </div>
                     </div>
                 </div>
