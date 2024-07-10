@@ -11,8 +11,8 @@
     position: absolute;
     top: -70px;
     background: linear-gradient(180deg,
-    rgba(255, 255, 255, 0.18),
-    rgba(255, 237, 0, 0.36));
+            rgba(255, 255, 255, 0.18),
+            rgba(255, 237, 0, 0.36));
     padding: 40px 30px;
     border-radius: 20px;
     text-align: center;
@@ -34,7 +34,7 @@
 }
 
 .ParaContent .col-6 p {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
 }
 

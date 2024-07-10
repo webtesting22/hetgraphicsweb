@@ -26,7 +26,7 @@
     background-color: yellow;
     color: black;
   }
-.footer-button-backside{
+/* .footer-button-backside{
     border: 1px solid #e5e5e2f3;
     padding: 0px 20px;
     height: 200px;
@@ -41,11 +41,8 @@
 }
 .footer-button:hover+.footer-button-backside{
     border: 1px solid #ffed00;
-  }
-.footer-section{
-    display: flex;
-    justify-content: space-evenly;
-}
+  } */
+
 .footer-about-section{
     display: flex;
     flex-direction: column;

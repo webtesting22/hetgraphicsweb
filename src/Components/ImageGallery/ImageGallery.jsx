@@ -54,27 +54,32 @@ const ImageGallery = () => {
                             <hr />
                         </div>
                     </div>
-                    <div className="Container col-lg-9" id='SwiperSlider'>
-                        <Swiper
-                            slidesPerView={3}
-                            spaceBetween={30}
-                            loop={true}
-                            autoplay={{
-                                delay: 2000,
-                                disableOnInteraction: false,
-                            }}
-                            // pagination={{
-                            //     clickable: true,
-                            // }}
-                            modules={[Autoplay]}
-                            className="mySwiper"
-                            style={{ height: "600px" }}
-                        >
-                            {carousalImages.map((item, index) => (
-                                <SwiperSlide key={index}><img src={item.image} alt="" className='ImgPreview' /></SwiperSlide>
-                            ))}
+                    <div className="Container col-lg-9" id='SwiperSlider' >
 
-                        </Swiper>
+                        <div style={{height:"500px"}}>
+                            <Swiper
+                                slidesPerView={3}
+                                spaceBetween={30}
+                                loop={true}
+                                autoplay={{
+                                    delay: 2000,
+                                    disableOnInteraction: false,
+                                }}
+                                speed={700}
+                                // pagination={{
+                                //     clickable: true,
+                                // }}
+                                modules={[Autoplay]}
+                                className="mySwiper"
+                            style={{height:"550px"}}
+                            
+                            >
+                                {carousalImages.map((item, index) => (
+                                    <SwiperSlide key={index}><img src={item.image} alt="" className='ImgPreview' /></SwiperSlide>
+                                ))}
+
+                            </Swiper>
+                        </div>
                     </div>
                 </div>
             </section>

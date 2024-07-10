@@ -4,7 +4,6 @@ import About from "../AboutUs/About";
 import CompanyQuate from "../CompanyQuate/CompanyQuate";
 import ImageGallery from "../ImageGallery/ImageGallery";
 import Footer from "../Footer/Footer";
-
 import Founder from "../Founder/Founder";
 const HomeView=()=>{
     return(
@@ -13,6 +12,8 @@ const HomeView=()=>{
         <About/>
         <CompanyQuate/>
         <ImageGallery/>
+        <Founder/>
+        <Footer/>
         </>
     )
 }

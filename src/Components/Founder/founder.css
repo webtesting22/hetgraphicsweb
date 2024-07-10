@@ -1,6 +1,7 @@
-#FounderContainer{
+#FounderContainer {
     position: relative;
 }
+
 .FounderImageAndInfo {
     width: 100%;
     margin: auto;
@@ -9,45 +10,75 @@
     justify-content: end;
     position: relative;
 }
-.FounderImageAndInfo img:hover+.FounderInfo{
+
+#ImageHover:hover .FounderInfo {
     transform: translate(10px, 10px);
-    transition: .5s;
+    /* transition: .5s; */
 }
-.FounderImageAndInfo .FounderInfo{
+
+#ImageHover .FounderInfo {
     position: absolute;
-    right: 10px;
-    width: 380px;
+    right: 25px;
+    width: 450px;
     z-index: 66;
     bottom: 10px;
-    background-color: 
-    rgba(255, 255, 255, 0.237);
+    background-color:
+        rgba(255, 255, 255, 0.139);
     padding: 10px;
     border-radius: 10px;
     transition: .5s;
-    backdrop-filter: blur(1px);
+    height: 260px;
+    overflow: hidden;
+    /* backdrop-filter: blur(1px); */
 }
-.FounderImageAndInfo .FounderInfo h1{
+
+#ImageHover:hover .FounderInfo {
+    height: 430px;
+    transition: 1s;
+    width: 480px;
+    right: 10px;
+}
+
+.FounderImageAndInfo .FounderInfo:hover {
+    height: 400px;
+    transition: 1s;
+}
+
+.FounderImageAndInfo .FounderInfo h1 {
     font-size: 40px;
     color: white;
     font-weight: 500;
 }
 
 .FounderImageAndInfo img {
-    width: 400px;
+    width: 500px;
     position: relative;
     z-index: 5;
     border-radius: 10px;
     transition: .5s;
+    filter: gray;
+    /* IE5+ */
+    -webkit-filter: grayscale(1);
+    /* Webkit Nightlies & Chrome Canary */
+    -webkit-transition: all .8s ease-in-out;
 }
 
-.FounderImageAndInfo img:hover {
+#ImageHover:hover img {
+    filter: none;
+    -webkit-filter: grayscale(0);
+    -webkit-transform: scale(1.01);
+}
+
+#ImageHover:hover img {
     transform: translate(10px, 10px);
     transition: .5s;
 }
-.FounderImageAndInfo img:hover+.ImageOverlayborder{
+
+.FounderImageAndInfo img:hover+.ImageOverlayborder {
     border: 1px solid transparent;
     transition: .5s;
 }
+
 .FounderImageAndInfo .ImageOverlayborder {
     border: 1px solid rgba(255, 237, 0, 1);
     height: 100%;
@@ -55,12 +86,17 @@
     top: 10px;
     bottom: 0;
     right: -10px;
-    width: 400px;
+    width: 500px;
     border-radius: 10px;
     transition: .5s;
 }
-.effectImage3{
+
+.effectImage3 {
     position: absolute;
     rotate: 180deg;
     top: -400px;
+}
+.FounderInfo i{
+    font-size: 30px;
+    /* color: white; */
 }
