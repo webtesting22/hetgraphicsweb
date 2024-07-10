@@ -1,5 +1,6 @@
 import React from "react";
 import "./Navigation.css"
+import HetLogo from "./HetLogo.png"
 const Navbar = () => {
     const NavigationLink = [
         {
@@ -7,7 +8,7 @@ const Navbar = () => {
             path: ""
         },
         {
-            link: "fasfs",
+            link: "Gallery",
             path: ""
         }
     ]
@@ -18,7 +19,10 @@ const Navbar = () => {
                     <span>sales@yellowspot.in</span>
                     <span>+91 9324244444</span>
                 </div>
-                <div>
+                <div className="HetLogo">
+                    <img src={HetLogo} style={{width:"120px"}} alt="" />
+                </div>
+                <div style={{display:"flex",alignItems:"center"}}>
                     {NavigationLink.map((item, index) => (
                         <>
                             <li key={index}>{item.link}</li>

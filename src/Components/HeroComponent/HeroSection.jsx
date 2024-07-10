@@ -6,7 +6,7 @@ const HeroSection = () => {
         <>
             <div id="HomeComponentContainer">
                 <div className="BackgroundImageOverlay">
-                    <img src={BackImage} alt="" />
+                    {/* <img src={BackImage} alt="" /> */}
                     <div className="BlackOverlay">
 
                     </div>

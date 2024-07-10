@@ -1,14 +1,16 @@
 import React from "react";
 import "./About.css"
+import yellowEffectImage from "../../assets/Images/effect1.svg"
 const About = () => {
   return (
-    <section className="about-section">
+    <section className="about-section " style={{position:"relative"}}>
+      <img src={yellowEffectImage} alt=""  className="effectImage1"/>
       <div className="CompanyInfo">
         <p>Ahmedabad's leading outdoor media provider since 2000, offers innovative billboard solutions in premium, high-traffic locations.</p>
       </div>
       <div>
 
-        <div class="AboutusContainer">
+        <div class="AboutusContainer container">
 
           <div className="row">
             <div className="col-lg-3" style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
