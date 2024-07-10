@@ -4,7 +4,7 @@
     opacity: 0.8;
 }
 .footer-button{
-    order: none;
+    border: none;
     padding: 0px 20px;
     color: white;
     background-color:#242423;
@@ -14,23 +14,34 @@
     align-items: center;
     justify-content: center;
     width: 200px;
-    border-radius: 5px;
+    /* border-radius: 5px; */
+    transition: 0.5s;
     position: relative;
     z-index: 4;
+
 }
+.footer-button:hover {
+    transform: translate(15px, 15px);
+    transition: 0.5s;
+    background-color: yellow;
+    color: black;
+  }
 .footer-button-backside{
-    border: 1px solid #ffed00;
+    border: 1px solid #e5e5e2f3;
     padding: 0px 20px;
     height: 200px;
     display: flex;
     align-items: center;
     position: absolute;
     top: 5px;
-    left: 5px;
+    left: 15px;
     width: 200px;
     border-radius: 5px;
     z-index: 2;
 }
+.footer-button:hover+.footer-button-backside{
+    border: 1px solid #ffed00;
+  }
 .footer-section{
     display: flex;
     justify-content: space-evenly;
@@ -44,8 +55,8 @@
 .footer-buttons{
     display: flex;
     align-items: center;
-    
-    /* justify-content: space-between; */
+    justify-items: center;
+    gap:30px;
 }
 .footer-icon-section{
     display: flex;

@@ -1,14 +1,22 @@
-.BackgroundImageOverlay img{
+.BackgroundImageOverlay img {
     width: 100%;
 }
-.BackgroundImageOverlay{
+
+.BackgroundImageOverlay {
     position: relative;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url("./BackGroundImage.svg");
+    background-size: cover;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
 }
-.BlackOverlay{
+
+.BlackOverlay {
     position: absolute;
     top: 0;
     opacity: 0.2;
@@ -16,7 +24,8 @@
     height: 200vh;
     background-color: black;
 }
-.WriteUpContent{
+
+.WriteUpContent {
     height: 100%;
     width: 100%;
     position: absolute;
@@ -24,16 +33,29 @@
     align-items: center;
     justify-content: center;
 }
-.WriteUpContent h1{
+
+.WriteUpContent h1 {
     text-transform: uppercase;
-    font-size: 90px;
+    font-size: 103px;
     color: white;
+    font-weight: 700;
+    color: transparent;
+    /* Make the inside of the text transparent */
+    -webkit-text-stroke: 2px rgb(255, 255, 255);
+    /* Apply red stroke, adjust stroke width as needed */
+    text-stroke: 2px rgb(255, 255, 255);
 
 }
-.WriteUpContent p{
-    font-size: 30px;
+
+.WriteUpContent p {
+    font-size: 47px;
+    font-weight: 500;
     color: white;
+    width: 70%;
+    text-align: center;
+    margin: 20px auto;
 }
-.WriteUpContent p span{
-    color:#ffed00;
+
+.WriteUpContent p span {
+    color: #ffed00;
 }

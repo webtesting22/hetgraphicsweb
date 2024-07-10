@@ -1,0 +1,26 @@
+#SwiperSlider .swiper-slide-active img {
+    width: 100%;
+    transition: 0.2s;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+#SwiperSlider .swiper-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.ImgPreview {
+    width: 70%;
+    transition: 0.2s;
+    border-radius: 20px;
+}
+
+#SwiperSlider .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

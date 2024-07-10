@@ -7,8 +7,10 @@ const Footer = () => {
     return (
         <div className="footer-section">
             <div className="footer-about-section">
-                <h1 className="section-heading">Get In Touch</h1>
-                <hr />
+                <div className="headingContainer">
+                    <h1 className="section-heading">Get In Touch</h1>
+                    <hr />
+                </div>
                 <div className="footer-icon-section">
                     <InstagramOutlined className="footer-icon" />
                     <LinkedinOutlined className="footer-icon" />
@@ -19,13 +21,15 @@ const Footer = () => {
                 <button className="footer-button">
                     <MailOutlined className="footer-icon" />
                     sales@yellowspot.in
-                    <div className="footer-button-backside" />
                 </button>
+                <div className="footer-button-backside"> </div>
+
                 <button className="footer-button" >
                     <PhoneOutlined className="footer-icon" />
                     +91 93242 44444
-                    <div className="footer-button-backside" />
                 </button>
+                <div className="footer-button-backside"> </div>
+
 
             </div>
         </div>
