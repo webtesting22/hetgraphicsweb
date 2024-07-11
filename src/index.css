@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
 body {
   background-color: rgb(31, 31, 31);
 }
@@ -5,10 +7,12 @@ body {
 p {
   margin: 0px;
   color: white;
+  font-family: "DM Sans", sans-serif;
 }
 
 a {
   text-decoration: none;
+  font-family: "DM Sans", sans-serif;
 }
 
 h1,
@@ -18,10 +22,13 @@ h4,
 h5,
 h6 {
   margin-bottom: 0px;
+  font-family: "DM Sans", sans-serif;
 }
+
 
 button {
   border: none;
+  font-family: "DM Sans", sans-serif;
 }
 
 
@@ -55,7 +62,7 @@ button {
   width: 100%;
   border-radius: 3px;
   z-index: 2;
- 
+
 }
 
 .AnimatedBtn:hover {
@@ -64,7 +71,8 @@ button {
   background-color: transparent;
   color: #ffed00;
 }
-.AnimatedBtn:hover+.btnBackside{
+
+.AnimatedBtn:hover+.btnBackside {
   border: 1px solid #ffed00;
 }
 
@@ -97,13 +105,13 @@ section {
   width: 100%;
 }
 
-@media (min-width:1300px) and (max-width:3000px){
-  .container{
+@media (min-width:1300px) and (max-width:3000px) {
+  .container {
     max-width: 1500px;
   }
 }
 
-@media (max-width:769px){
+@media (max-width:769px) {
   .sectionheading {
     font-size: 40px;
     font-weight: 400;

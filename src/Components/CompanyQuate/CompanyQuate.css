@@ -2,8 +2,8 @@
     position: relative;
 }
 .CompanyPara{
-    font-size: 45px;
-    font-weight: 700;
+    font-size: 40px;
+    font-weight: 500;
 }
 #CompanyQuate .AnimatedBtn{
     padding: 10px 50px;
@@ -38,6 +38,7 @@
     }
     .CompanyPara{
         font-size: 30px;
+        font-weight: 500;
     }
     #RightSideBtn{
         display: flex;

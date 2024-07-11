@@ -100,10 +100,11 @@
     margin: 0px 10px;
 }
 
-.socialIcons i {
+.socialIcons img {
     color: white;
     margin: 10px 20px;
-    font-size: 30px;
+    width: 40px;
+    height: 40px;
 }
 
 .socialIcons {
@@ -111,17 +112,19 @@
     justify-content: center;
     flex-direction: row;
 }
-.copyrightText{
+
+.copyrightText {
     display: flex;
     justify-content: center;
     margin: 50px 0px;
     align-items: center;
 }
 
-.copyrightText i{
+.copyrightText i {
     rotate: -45deg;
     margin: 0px;
 }
+
 @media (max-width:600px) {
     #Footerbtn {
         display: flex;

@@ -37,7 +37,7 @@
 
 .WriteUpContent h1 {
     text-transform: uppercase;
-    font-size: 103px;
+    font-size: 90px;
     color: white;
     font-weight: 700;
     color: transparent;
@@ -49,7 +49,7 @@
 }
 
 .WriteUpContent p {
-    font-size: 47px;
+    font-size: 40px;
     font-weight: 500;
     color: white;
     width: 70%;
@@ -61,7 +61,7 @@
     color: #ffed00;
 }
 
-@media (max-width:769px){
+@media (max-width:769px) {
     .WriteUpContent h1 {
         text-transform: uppercase;
         font-size: 50px;
@@ -72,9 +72,10 @@
         -webkit-text-stroke: 2px rgb(255, 255, 255);
         /* Apply red stroke, adjust stroke width as needed */
         text-stroke: 2px rgb(255, 255, 255);
-    
+
     }
-    .WriteUpContent p{
+
+    .WriteUpContent p {
         font-size: 20px;
         font-weight: 500;
         color: white;

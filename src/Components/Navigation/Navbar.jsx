@@ -16,11 +16,11 @@ const Navbar = () => {
         <>
             <section id="NavigationSection">
                 <div className="first">
-                    <span>sales@yellowspot.in</span>
-                    <span>+91 9324244444</span>
+                    <a href="mailto:sales@yellowspot.in" style={{ color: "white" }}><span>sales@yellowspot.in</span></a>
+                    <a href="tel:+91 9324244444" style={{ color: "white" }}><span>+91 9324244444</span></a>
                 </div>
                 <div className="HetLogo">
-                    <img src={HetLogo} style={{width:"120px"}} alt="" />
+                    <img src={HetLogo} style={{ width: "90px" }} alt="" />
                 </div>
                 <div className="third">
                     {NavigationLink.map((item, index) => (
@@ -29,7 +29,7 @@ const Navbar = () => {
 
                         </>
                     ))}
-                    <div style={{position:"relative"}}>
+                    <div style={{ position: "relative" }}>
                         <a href="https://yellow-spot.vercel.app/" target="_blank"><button className="AnimatedBtn">YellowSpot</button></a>
                         <div className="btnBackside">
                         </div>
