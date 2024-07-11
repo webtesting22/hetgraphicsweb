@@ -56,26 +56,47 @@ const ImageGallery = () => {
                     </div>
                     <div className="Container col-lg-9" id='SwiperSlider' >
 
-                        <div style={{height:"500px"}}>
+                        <div style={{ height: "500px" }}>
                             <Swiper
-                                slidesPerView={3}
+                                // slidesPerView={3}
                                 spaceBetween={30}
                                 loop={true}
-                                autoplay={{
-                                    delay: 2000,
-                                    disableOnInteraction: false,
-                                }}
+                                // autoplay={{
+                                //     delay: 2000,
+                                //     disableOnInteraction: false,
+                                // }}
                                 speed={700}
                                 // pagination={{
                                 //     clickable: true,
                                 // }}
+                                breakpoints={{
+                                    640: {
+                                        slidesPerView: 1,
+                                        spaceBetween: 10,
+                                    },
+                                    768: {
+                                        slidesPerView: 2,
+                                        spaceBetween: 20,
+                                    },
+                                    1024: {
+                                        slidesPerView: 3,
+                                        spaceBetween: 30,
+                                    },
+                                }}
                                 modules={[Autoplay]}
                                 className="mySwiper"
-                            style={{height:"550px"}}
-                            
+                                style={{ height: "500px" }}
+
                             >
                                 {carousalImages.map((item, index) => (
-                                    <SwiperSlide key={index}><img src={item.image} alt="" className='ImgPreview' /></SwiperSlide>
+                                    <SwiperSlide key={index}>
+
+                                        {/* <div style={{display:"flex",justifyContent:"center" }} id='ActiveContainer'> */}
+                                            <img src={item.image} alt="" className='ImgPreview' />
+                                            {/* <div className='borderContainer'>
+                                            </div>
+                                        </div> */}
+                                    </SwiperSlide>
                                 ))}
 
                             </Swiper>

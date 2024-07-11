@@ -102,3 +102,12 @@ section {
     max-width: 1500px;
   }
 }
+
+@media (max-width:769px){
+  .sectionheading {
+    font-size: 40px;
+    font-weight: 400;
+    color: white;
+    text-align: start;
+  }
+}

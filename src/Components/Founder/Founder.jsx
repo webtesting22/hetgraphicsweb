@@ -22,7 +22,7 @@ const Founder = () => {
                                     <div className="FounderInfo">
                                         <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between", marginBottom: "10px" }}>
                                             <h1>Asit Shah</h1>
-                                            <i class='bx bxl-linkedin-square' style={{color:"white"}}></i>
+                                            <i class='bx bxl-linkedin-square' style={{ color: "white" }}></i>
                                         </div>
                                         <div>
                                             <h4 style={{ fontSize: "23px", color: "white", fontWeight: "500" }}>Founder & CEO </h4>

@@ -1,5 +1,4 @@
-
-#NavigationSection{
+#NavigationSection {
     background-color: black;
     display: flex;
     justify-content: space-between;
@@ -7,15 +6,32 @@
     color: white;
     padding: 10px 50px;
 }
-#NavigationSection>div:nth-child(1) span{
+
+#NavigationSection>div:nth-child(1) span {
     margin: 0px 20px;
-} 
-#NavigationSection>div:nth-child(2){
+}
+
+#NavigationSection>div:nth-child(2) {
     display: flex;
 
 }
-#NavigationSection>div:nth-child(3) li{
+
+#NavigationSection>div:nth-child(3) li {
     list-style: none;
     margin: 0px 20px;
     font-size: 18px;
+}
+#NavigationSection .third{
+    display: flex;
+    align-items: center;
+}
+@media (max-width:769px) {
+    #NavigationSection{
+        display: flex;
+        justify-content: center;
+    }
+    #NavigationSection .first,
+    #NavigationSection .third {
+        display: none;
+    }
 }

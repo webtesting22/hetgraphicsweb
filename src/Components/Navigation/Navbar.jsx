@@ -15,14 +15,14 @@ const Navbar = () => {
     return (
         <>
             <section id="NavigationSection">
-                <div>
+                <div className="first">
                     <span>sales@yellowspot.in</span>
                     <span>+91 9324244444</span>
                 </div>
                 <div className="HetLogo">
                     <img src={HetLogo} style={{width:"120px"}} alt="" />
                 </div>
-                <div style={{display:"flex",alignItems:"center"}}>
+                <div className="third">
                     {NavigationLink.map((item, index) => (
                         <>
                             <li key={index}>{item.link}</li>

@@ -1,13 +1,14 @@
-.footer-icon{
-    
+.footer-icon {
+
     font-size: 30px;
     opacity: 0.8;
 }
-.footer-button{
+
+.footer-button {
     border: none;
     padding: 0px 20px;
     color: white;
-    background-color:#242423;
+    background-color: #242423;
     height: 200px;
     display: flex;
     flex-direction: column;
@@ -20,12 +21,14 @@
     z-index: 4;
 
 }
+
 .footer-button:hover {
     transform: translate(15px, 15px);
     transition: 0.5s;
     background-color: yellow;
     color: black;
-  }
+}
+
 /* .footer-button-backside{
     border: 1px solid #e5e5e2f3;
     padding: 0px 20px;
@@ -43,26 +46,90 @@
     border: 1px solid #ffed00;
   } */
 
-.footer-about-section{
+.footer-about-section {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     color: white;
 }
-.footer-buttons{
+
+.footer-buttons {
     display: flex;
     align-items: center;
     justify-items: center;
-    gap:30px;
+    gap: 30px;
 }
-.footer-icon-section{
+
+.footer-icon-section {
     display: flex;
     justify-content: space-evenly;
 }
+
 .footer-about-section hr {
     opacity: 1;
     background-color: #ffed00;
     width: 100%;
     border: 1px solid #ffed00;
-    margin:  0px;
+    margin: 0px;
+}
+
+#Footerbtn {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#Footerbtn>div {
+    width: 100%;
+    margin: 0px 10px;
+}
+
+#Footerbtn .AnimatedBtn {
+    background-color: rgba(36, 36, 35, 1);
+    color: white;
+    padding: 100px 0px;
+    width: 100%;
+}
+
+#Footerbtn .btnBackside {
+    border: 1px solid #ffed00;
+    padding: 100px 0px;
+}
+
+#Footerbtn .AnimatedBtn i {
+    rotate: 0deg;
+    margin: 0px 10px;
+}
+
+.socialIcons i {
+    color: white;
+    margin: 10px 20px;
+    font-size: 30px;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.copyrightText{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0px;
+    align-items: center;
+}
+
+.copyrightText i{
+    rotate: -45deg;
+    margin: 0px;
+}
+@media (max-width:600px) {
+    #Footerbtn {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    #Footerbtn>div {
+        margin: 20px 0px;
+    }
 }
